@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Code Quiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/reset.css">
+  <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+
+<body>
+  <header>
+    <div class="highscores">View Highscores</div>
+    <div class="timer">30 Seconds</div>
+  </header>
+<h1>JavaScript Quiz</h1>
+  <div class="container">
+  <div id ="question-container" class="hide">
+    <div id="question">Question</div>
+    <div id="buttons-answer" class="btn-grid">
+      <button class="btn" id="answer">Answer 1</button>
+      <button class="btn" id="answer">Answer 2</button>
+      <button class="btn" id="answer">Answer 3</button>
+      <button class="btn" id="answer">Answer 4</button>
+    </div>
+  </div>
+  <div class="intro">
+    <h2>Welcome to the quiz!</h2>
+    <p class="intro-p">This is a timed multiple choice quiz on JavaScript basics. Good luck!</p>
+  </div>
+  <div class="controls">
+  <button id="start-btn" class="start-btn btn">Start</button>
+  
+  </div>
+  <form class="hide-2 form">
+    <div class="highscore-page">Highscores</div>
+    <label for="initals" class="your-intials">Your initals:</label>
+    <input type="text" id="initials" name="initals">
+    <input type="button" value="Submit" id="submit">
+
+
+  </form>
+  <div>
+    <p id="user-score"></p>
+    <div class="end-buttons">
+      <button onclick="resetScore();"
+      class="reset-button hide">Reset Score</button>
+      <button onclick="startGame();" class="play-again-button hide">Play Again</button>
+    </div>
+
+  </div>
+  </div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+* {
+  font-family: 'Source Code Pro', monospace;
+}
+
+body {
+  background-image: url('../images/tech2.jpg');
+  background-size: contain;
+  
+}
+
+h1 {
+font-size: 48px;
+text-align: center;
+margin-bottom: 50px;
+margin-top: 20px;
+color: white;
+}
+
+/* styles for the quiz container */
+.container {
+width: 800px;
+max-width: 80%;
+background-color: white;
+border-radius: 10px;
+padding: 10px;
+box-shadow: 0 0 10px 2px;
+position: relative;
+margin: 0 auto;
+font-family: 'Source Code Pro', monospace;
+
+}
+
+/* answer button flexbox */
+.btn-grid {
+  display: flex; 
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px; 
+  align-items: center; 
+  margin: 20px auto; 
+}
+
+/* answer button properties */
+.btn {
+  width: 300px;
+  height: 60px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: purple;
+  color: white;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transition: 0.15s;
+}
+
+#question {
+  font-size: 30px;
+  text-align: center;
+}
+
+/* styling for highscores page */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-btn {
+  width: 180px;
+  height: 80px;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: purple;
+}
+
+
+/* class to hide certian elements in the HTML with JavaScript */
+.hide, .hide-2 {
+  display: none;
+}
+
+/* styling for if an answer is correct or incorrect */
+.correct {
+  background-color: green;
+
+}
+
+.incorrect {
+  background-color: red;
+}
+
+
+
+h2, .intro-p {
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; 
+  padding: 10px 20px; 
+}
+
+.timer {
+  font-size: 30px;
+  color: white;
+}
+
+.highscores {
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.highscores:hover {
+  color: purple;
+}
+
+.highscore-page{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* styling for the submit page */
+#initials {
+  width: 200px;
+  height: 30px;
+  align-items: center;
+}
+
+label {
+  font-size: 20px;
+  text-align: center;
+  
+}
+
+#submit {
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: purple;
+  color: white;
+  border-radius: 10px;
+  
+}
+
+#submit:hover {
+  opacity: 0.9;
+  transition: 0.15s;
+}
+
+/* styling for the highscores that have been saved */
+#user-score {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 10px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+li {
+  list-style-type: decimal;
+}
+
+.reset-button, 
+.play-again-button {
+  
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: purple;
+  color: white;
+  border-radius: 10px;
+
+}
+
+.reset-button:hover, 
+.play-again-button:hover {
+opacity: 0.9;
+transition: 0.15s;
+}
+
+.end-buttons {
+  display: flex;
+  justify-content: center;
+ 
+}
+
